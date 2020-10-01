@@ -1,17 +1,7 @@
-print("Day 1")
-the_file = open("um-deliveries-20140519.txt")
-
-
-print("Day 2")
-the_file = open("um-deliveries-20140520.txt")
-
-
-print("Day 3")
-the_file = open("um-deliveries-20140521.txt")
-
-
 # Create a function:
 def file_reader(file):
+    """Function reads through the file text
+    outputs cost of produce from file"""
 
     for line in file:
         line = line.rstrip()
@@ -24,8 +14,18 @@ def file_reader(file):
         print("Delivered {} {}s for total of ${}".format(count, melon, amount))
     file.close()
 
-    # Function call:
 
+# =====================================
 
-# file_reader(file=open("um-deliveries-20140521.txt"))
+print("Day 1")
+# Function call:
+file_reader(file=open("um-deliveries-20140519.txt"))
+
+print("Day 2")
+# Function call:
+file_reader(file=open("um-deliveries-20140520.txt"))
+
+print("Day 3")
+# Function call:
+file_reader(file=open("um-deliveries-20140521.txt"))
 
