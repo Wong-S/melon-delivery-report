@@ -11,7 +11,7 @@ def file_reader(file):
         count = words[0]
         amount = words[0]
 
-        print("Delivered {} {}s for total of ${}".format(count, melon, amount))
+        print(f"Delivered {count} {melon}s for total of ${amount}")
     file.close()
 
 
