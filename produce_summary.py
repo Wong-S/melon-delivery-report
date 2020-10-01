@@ -8,8 +8,8 @@ def file_reader(file):
         words = line.split("|")
 
         melon = words[0]
-        count = words[0]
-        amount = words[0]
+        count = words[1]
+        amount = words[2]
 
         print(f"Delivered {count} {melon}s for total of ${amount}")
     file.close()
