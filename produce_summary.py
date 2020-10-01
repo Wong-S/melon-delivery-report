@@ -31,3 +31,6 @@ def main():
     # Function call:
     file_reader(file=open("um-deliveries-20140521.txt"))
 
+
+# Calling main function:
+main()
